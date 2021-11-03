@@ -1,0 +1,12 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<mytuto = 'http://www.acme.org/jcr/mytuto/1.0'>
+
+[mytuto:jumbotron] > jnt:content, jmix:droppableContent, jmix:editorialContent
+ - jumbotronTitle (string)
+ - jumbotronLead (string)
+ - jumbotronParagraph (string)
+ - jumbotronButtonLabel (string)
+ - jumbotronButtonLink (weakreference) < 'jnt:page'
+ - jumbotronPhoto (weakreference, picker[type='image'])
+
